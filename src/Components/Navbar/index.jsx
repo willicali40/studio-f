@@ -3,7 +3,7 @@ import { LiaTruckMovingSolid } from 'react-icons/lia'
 
 function Navbar() {
   return (
-    <nav className="flex justify-between items-center m-6 w-100">
+    <nav className="flex justify-between items-center p-2 w-100vw fixed top-0 left-0 right-0 bg-white">
       {/* left nav section */}
       <div className="flex w-2/4 p-1 items-center">
         <span className=" w-8 h-12">
