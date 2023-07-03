@@ -1,23 +1,39 @@
 import Layout from "../../Components/Layout";
 import SummerCard from "../../Components/SummerCard";
 import ProductCard from "../../Components/ProductCard/index";
+import Footer from "../../Components/Footer";
 
 function Home() {
+  const oldCollection = [
+    {
+      title: "",
+      img: "../../../public/cardsBanners/COLOR-ROMANCE--BANNER-HOME-SM.png",
+    },
+    {
+      title: "",
+      img: "../../../public/cardsBanners/BANNER-HOME-STF-SUMMER-2023-MUMBAI-VIBES-SM.webp",
+    },
+    {
+      title: "",
+      img: "../../../public/cardsBanners/BANNER-HOME-Y2K-FEVER-SM.webp",
+    },
+  ];
+
   const summerCollection = [
     {
-      image: "../../../public/BLUSAS-ABR-23.webp",
+      image: "../../../public/cardsBanners/BLUSAS-ABR-23.webp",
       title: "BLUSAS",
     },
     {
-      image: "../../../public/PANTALONES-ABR-23.webp",
+      image: "../../../public/cardsBanners/PANTALONES-ABR-23.webp",
       title: "PANTALONES",
     },
     {
-      image: "../../../public/VESTIDOS-ABR-23.webp",
+      image: "../../../public/cardsBanners/VESTIDOS-ABR-23.webp",
       title: "VESTIDOS",
     },
     {
-      image: "../../../public/BOLSOS-ABR-23.webp",
+      image: "../../../public/cardsBanners/BOLSOS-ABR-23.webp",
       title: "BOLSOS",
     },
   ];
@@ -59,7 +75,7 @@ function Home() {
     <Layout>
       <div className="w-100 h-2/4">
         <img
-          src="../../../public/BANNER-HOME-ENCANTO-MEDITERRANEO-LG.webp"
+          src="../../../public/cardsBanners/BANNER-HOME-ENCANTO-MEDITERRANEO-LG.webp"
           alt="Encanto collection photo"
           className="w-full h-full"
         />
@@ -73,7 +89,7 @@ function Home() {
       <div className="w-full flex justify-between">
         {summerCollection.map((product, index) => {
           return (
-            <SummerCard key={index} img={product.image} title={product.title} />
+            <SummerCard key={index} img={product.image} title={product.title} active={true} />
           );
         })}
       </div>
@@ -99,6 +115,14 @@ function Home() {
           })}
         </div>
       </div>
+      <div className="w-full flex justify-between mt-14 pl-24 pr-24">
+        {oldCollection.map((product, index) => {
+          return (
+            <SummerCard key={index} img={product.img} title={product.title} />
+          );
+        })}
+      </div>
+      <Footer />
     </Layout>
   );
 }
