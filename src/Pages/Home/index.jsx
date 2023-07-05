@@ -2,6 +2,7 @@ import Layout from "../../Components/Layout";
 import SummerCard from "../../Components/SummerCard";
 import ProductCard from "../../Components/ProductCard/index";
 import Footer from "../../Components/Footer";
+import ProductsToCart from "../../Components/ProductsToCart";
 
 function Home() {
   const oldCollection = [
@@ -123,6 +124,7 @@ function Home() {
         })}
       </div>
       <Footer />
+      <ProductsToCart />
     </Layout>
   );
 }
