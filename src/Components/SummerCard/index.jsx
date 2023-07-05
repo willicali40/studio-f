@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 function SummerCard({ img, title, active }) {
   return (
     <div className="w-80 text-white relative">

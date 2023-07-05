@@ -18,6 +18,7 @@ function Products() {
             state={"NUEVO"}
             title={product.title}
             price={product.price}
+            product={product}
           />
         );
       });
