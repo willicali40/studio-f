@@ -200,8 +200,8 @@ function Footer() {
       </div>
       <div className="w-full" >
         <div className="w-full flex items-center justify-center mt-6 mb-6">
-          <img className="w-80 h-12" src="public/payment/mediosPago-3.png" alt="Payment methods" />
-          <img src="public/payment/logo-sic-colombia.webp" />
+          <img className="w-80 h-12" src="public/payment/mediosPago-3.jpg" alt="Payment methods" />
+          <img src="public/payment/logo-sic-colombia.jpg" />
         </div>
         <p className="w-full text-xs text-center pb-3 border-b border-zinc-300">
           STF GROUP se encuentra comprometido con la transparencia y la
