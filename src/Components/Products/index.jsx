@@ -19,6 +19,7 @@ function Products() {
             title={product.title}
             price={product.price}
             product={product}
+            active={true}
           />
         );
       });

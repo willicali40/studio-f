@@ -4,7 +4,6 @@ import { ShoppingContext } from "../../Context/index";
 import ProductDetailCard from "../ProductDetailCard";
 import { GrClose } from "react-icons/gr";
 
-
 function CheckoutSide() {
   const context = useContext(ShoppingContext);
   return (
@@ -50,12 +49,23 @@ function CheckoutSide() {
           </p>
         </div>
       </div>
-      <input
-        type="button"
-        value={"PAGAR"}
-        className="w-full h-12 mt-3 mb-3 font-extrabold text-white text-sm bg-green-600"
-      />
-      <Link to="/">
+      <Link to="/payment">
+        <input
+          type="button"
+          value={"PAGAR"}
+          className="w-full h-12 mt-3 mb-3 font-extrabold text-white text-sm bg-green-600 cursor-pointer"
+          onClick={() => {
+            context.closeProductsToCart();
+          }}
+          id="disable-button"
+        />
+      </Link>
+      <Link
+        to="/products"
+        onClick={() => {
+          context.closeProductsToCart();
+        }}
+      >
         <p className="text-center text-xs">Continua comprando</p>
       </Link>
     </aside>

@@ -3,7 +3,6 @@ import { createContext, useState, useEffect } from "react";
 export const ShoppingContext = createContext();
 
 export const ShoppingProvider = ({ children }) => {
-
   const [productsToCart, setProductsToCart] = useState([])
 
   // cart state
@@ -78,7 +77,7 @@ export const ShoppingProvider = ({ children }) => {
         closeProductsToCart,
         productsToCart,
         setProductsToCart,
-        totalPrice
+        totalPrice,
       }}
     >
       {children}
