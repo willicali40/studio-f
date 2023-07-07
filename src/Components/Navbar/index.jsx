@@ -16,6 +16,7 @@ function Navbar() {
     let category = e.target.innerText;
     context.setCategory(category);
     context.setIsCategoryActive(false)
+    context.closeProductsToCart()
   }
 
   function inputSearch(e) {
@@ -29,10 +30,12 @@ function Navbar() {
       {/* left nav section */}
       <div className="flex w-2/4 p-1 items-center">
         <span className=" w-8 h-12">
-          <AiOutlineMenu className="w-full h-full cursor-pointer" />
+        <Link to="/404">
+          <AiOutlineMenu className="w-full h-full cursor-pointer" onClick={() => {context.closeProductsToCart()}}/>
+        </Link>
         </span>
-        <div className="ml-6 text-4xl">
-          <Link to="/">STUDIO F</Link>
+        <div className="ml-6 text-4xl" onClick={() => {context.closeProductsToCart()}}>
+          <Link to="/" >STUDIO F</Link>
         </div>
         <ul className=" ml-8 flex justify-between items-center w-44 text-xs font-bold">
           <Link
@@ -72,10 +75,10 @@ function Navbar() {
         <div className="flex justify-between w-56 mr-16 items-center">
           <span className="flex justify-between border-r-2 border-black pr-2">
             <AiOutlineUser className="w-4 h-4" />
-            <Link to="https://www.studiof.com.co/login?ReturnUrl=%2f_secure%2fcuenta%2fpedidos">Iniciar Seción</Link>
+            <Link to="/404">Iniciar Seción</Link>
           </span>
           <span>
-          <Link to="https://www.studiof.com.co/rastreo">
+          <Link to="/404">
             <LiaTruckMovingSolid className="w-6 h-6" />
           </Link>
           </span>

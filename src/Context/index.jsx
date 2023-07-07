@@ -3,6 +3,8 @@ import { createContext, useState, useEffect } from "react";
 export const ShoppingContext = createContext();
 
 export const ShoppingProvider = ({ children }) => {
+  const [productsToCart, setProductsToCart] = useState([])
+
   // cart state
   const [count, setCount ] = useState(0)
 
@@ -48,6 +50,12 @@ export const ShoppingProvider = ({ children }) => {
     setIsProductsToCartOpen(false)
   }
 
+  function totalPrice(product) {
+    let sum = 0
+    product.forEach(product => sum += product.price)
+    return sum
+  }
+
   return (
     <ShoppingContext.Provider
       value={{
@@ -66,7 +74,10 @@ export const ShoppingProvider = ({ children }) => {
         isProductsToCartOpen,
         setIsProductsToCartOpen,
         openProductsToCart,
-        closeProductsToCart
+        closeProductsToCart,
+        productsToCart,
+        setProductsToCart,
+        totalPrice,
       }}
     >
       {children}
