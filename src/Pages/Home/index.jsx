@@ -8,64 +8,64 @@ function Home() {
   const oldCollection = [
     {
       title: "",
-      img: "../../../public/cardsBanners/COLOR-ROMANCE--BANNER-HOME-SM.png",
+      img: "public/cardsBanners/COLOR-ROMANCE--BANNER-HOME-SM.png",
     },
     {
       title: "",
-      img: "../../../public/cardsBanners/BANNER-HOME-STF-SUMMER-2023-MUMBAI-VIBES-SM.webp",
+      img: "public/cardsBanners/BANNER-HOME-STF-SUMMER-2023-MUMBAI-VIBES-SM.webp",
     },
     {
       title: "",
-      img: "../../../public/cardsBanners/BANNER-HOME-Y2K-FEVER-SM.webp",
+      img: "public/cardsBanners/BANNER-HOME-Y2K-FEVER-SM.webp",
     },
   ];
 
   const summerCollection = [
     {
-      image: "../../../public/cardsBanners/BLUSAS-ABR-23.webp",
+      image: "public/cardsBanners/BLUSAS-ABR-23.webp",
       title: "BLUSAS",
     },
     {
-      image: "../../../public/cardsBanners/PANTALONES-ABR-23.webp",
+      image: "public/cardsBanners/PANTALONES-ABR-23.webp",
       title: "PANTALONES",
     },
     {
-      image: "../../../public/cardsBanners/VESTIDOS-ABR-23.webp",
+      image: "public/cardsBanners/VESTIDOS-ABR-23.webp",
       title: "VESTIDOS",
     },
     {
-      image: "../../../public/cardsBanners/BOLSOS-ABR-23.webp",
+      image: "public/cardsBanners/BOLSOS-ABR-23.webp",
       title: "BOLSOS",
     },
   ];
 
   const products = [
     {
-      img: "../../../public/products/-stfco-producto-Bolsosycarteras-BLANCO-S402293-1.webp",
+      img: "public/products/-stfco-producto-Bolsosycarteras-BLANCO-S402293-1.webp",
       state: "NUEVO",
       title: "BOLSO DE HOMBRO CON CADENA Y FF FRONTAL",
       price: "$298.900",
     },
     {
-      img: "../../../public/products/-stfco-producto-Camisasyblusas-NATURAL-S173243-1.webp",
+      img: "public/products/-stfco-producto-Camisasyblusas-NATURAL-S173243-1.webp",
       state: "NUEVO",
       title: "BLUSA MANGA 3/4 CON PASAMANERIA",
       price: "$289.900",
     },
     {
-      img: "../../../public/products/-stfco-producto-Camisasyblusas-NATURAL-S173561-2.webp",
+      img: "public/products/-stfco-producto-Camisasyblusas-NATURAL-S173561-2.webp",
       state: "NUEVO",
       title: "BLUSA CUELLO ALTO Y MANGA LARGA CON CRUCE",
       price: "$189.900",
     },
     {
-      img: "../../../public/products/-stfco-producto-Camisasyblusas-ROJOPRADA-S173896A-1.webp",
+      img: "public/products/-stfco-producto-Camisasyblusas-ROJOPRADA-S173896A-1.webp",
       state: "NUEVO",
       title: "BLUSA SISA CUELLO ALTO CON BROCHES",
       price: "$159.900",
     },
     {
-      img: "../../../public/products/-stfco-producto-Enterizosconjuntos-VERDESELVA-S052390-1.webp",
+      img: "public/products/-stfco-producto-Enterizosconjuntos-VERDESELVA-S052390-1.webp",
       state: "NUEVO",
       title: "CONJUNTO SHORT Y BLUSA CAMISERA",
       price: "$329.900",
@@ -77,7 +77,7 @@ function Home() {
       <div className="w-100 h-2/4">
         <Link to="/products">
           <img
-            src="../../../public/cardsBanners/BANNER-HOME-ENCANTO-MEDITERRANEO-LG.webp"
+            src="public/cardsBanners/BANNER-HOME-ENCANTO-MEDITERRANEO-LG.webp"
             alt="Encanto collection photo"
             className="w-full h-full"
           />

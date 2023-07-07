@@ -6,7 +6,7 @@ function Error404() {
       <figure className="w-full mt-28">
         <img
           className="w-full"
-          src="../../../public/404/STF-ERROR404-BANNER-LG.webp"
+          src="public\404\STF-ERROR404-BANNER-LG.webp"
           alt="Página no encontrada"
         />
       </figure>
