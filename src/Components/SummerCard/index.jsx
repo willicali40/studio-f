@@ -7,7 +7,7 @@ function SummerCard({ img, title, active }) {
       <img className="hover:scale-110" src={img} alt={title} />
     </Link>
       <div className="flex flex-col justify-center items-center absolute bottom-0 w-full h-1/4">
-        <h1 className="w-full text-center font-montserrat tracking-tighter text-4xl leading-8 mb-3">{title}</h1>
+        <h1 className="w-full text-center font-montserrat tracking-tighter md:text-2xl xl:text-4xl leading-8 md:mb-0 xl:mb-3">{title}</h1>
         {
           active && <a className="border-b border-white mb-2 font-montserrat font-light">Ver todo</a>
         }

@@ -118,7 +118,9 @@ function Footer() {
         {/* left side */}
         <div className="w-2/5 text-sm">
           <p>Suscríbete a nuestro</p>
-          <h1 className="text-8xl font-bold mb-1">NEWS LETTER</h1>
+          <h1 className="md:text-6xl xl:text-8xl font-bold mb-1">
+            NEWS LETTER
+          </h1>
           <p>Recibir información de moda para:</p>
           <div className="flex mt-1">
             <input className="ml-3 mr-2" type="checkbox" />
@@ -138,19 +140,27 @@ function Footer() {
             <p className="text-xs w-80">
               Sí autorizo a STF GROUP S.A. el tratamiento de mis datos
               personales, de acuerdo a las finalidades de su política de
-              tratamiento de datos personales (Consúltala aquí). <br/> Certifico que
-              he sido informado sobre los términos y condiciones de la página
-              web (Consulta aquí los términos y condiciones)
+              tratamiento de datos personales (Consúltala aquí). <br />{" "}
+              Certifico que he sido informado sobre los términos y condiciones
+              de la página web (Consulta aquí los términos y condiciones)
             </p>
           </div>
         </div>
         {/* rigth side */}
         <div className="flex flex-col items-center w-3/5">
           <div className="flex justify-evenly w-2/5 mb-11">
-            <AiFillFacebook className="w-7 h-7" />
-            <AiOutlineInstagram className="w-7 h-7" />
-            <AiOutlineTwitter className="w-7 h-7" />
-            <AiFillYoutube className="w-7 h-7" />
+            <Link to="https://www.facebook.com/studiofinternational">
+              <AiFillFacebook className="w-7 h-7" />
+            </Link>
+            <Link to="https://www.instagram.com/studiofcolombia/">
+              <AiOutlineInstagram className="w-7 h-7" />
+            </Link>
+            <Link to="https://twitter.com/i/flow/login?redirect_after_login=%2Fstudiofcolombia">
+              <AiOutlineTwitter className="w-7 h-7" />
+            </Link>
+            <Link to="https://www.youtube.com/channel/UCvj2Mq1S1g-5-Jp87l_4fHg/videos">
+              <AiFillYoutube className="w-7 h-7" />
+            </Link>
           </div>
           <div className="flex w-full justify-between">
             <div className="flex flex-col">
@@ -198,9 +208,13 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-full" >
+      <div className="w-full">
         <div className="w-full flex items-center justify-center mt-6 mb-6">
-          <img className="w-80 h-12" src="public/payment/mediosPago-3.jpg" alt="Payment methods" />
+          <img
+            className="w-80 h-12"
+            src="public/payment/mediosPago-3.jpg"
+            alt="Payment methods"
+          />
           <img src="public/payment/logo-sic-colombia.jpg" />
         </div>
         <p className="w-full text-xs text-center pb-3 border-b border-zinc-300">
@@ -213,7 +227,9 @@ function Footer() {
           Canal de transparencia ubicado en la parte inferior de nuestra página
           Links de Interés.
         </p>
-        <p className="mt-3 text-xs text-center font-normal mb-3">© COPYRIGHT 2020 STUDIO F. TODOS LOS DERECHOS RESERVADOS.</p>
+        <p className="mt-3 text-xs text-center font-normal mb-3">
+          © COPYRIGHT 2020 STUDIO F. TODOS LOS DERECHOS RESERVADOS.
+        </p>
       </div>
     </footer>
   );

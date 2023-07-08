@@ -83,11 +83,11 @@ function Home() {
           />
         </Link>
       </div>
-      <div className=" flex w-full justify-between items-center m-4 h-14 bg-black text-sm text-white">
-        <p>COMPRA SEGURA | WWW.STUDIOF.COM.CO</p>
-        <p>ENVÍO GRATIS POR COMPRAS IGUALES O SUPERIORES A $150.000</p>
-        <p>ARTISAN SUMMER | SUMMER 2023 - STUDIO F</p>
-        <p>IPANEMA | SUMMER 2023 - STUDIO F</p>
+      <div className="flex md:w-max xl:w-full justify-between items-center m-4 h-14 bg-black md:text-xs xl:text-sm text-white">
+        <p className="md:w-max md:ml-3 md:mr-3">COMPRA SEGURA | WWW.STUDIOF.COM.CO</p>
+        <p className="md:w-max md:ml-3 md:mr-3">ENVÍO GRATIS POR COMPRAS IGUALES O SUPERIORES A $150.000</p>
+        <p className="md:w-max md:ml-3 md:mr-3">ARTISAN SUMMER | SUMMER 2023 - STUDIO F</p>
+        <p className="md:w-max md:ml-3 md:mr-3">IPANEMA | SUMMER 2023 - STUDIO F</p>
       </div>
       <div className="w-full flex justify-between p-3">
         {summerCollection.map((product, index) => {
@@ -103,11 +103,11 @@ function Home() {
       </div>
       <div className="w-full mt-16">
         <div className="w-full mb-10  flex items-center justify-between pl-12 pr-12">
-          <div className="w-96 border h-px border-gray-300"></div>
-          <h1 className="w-auto text-4xl font-montserrat font-bold">
+          <div className="md:w-80 xl:w-96 border h-px border-gray-300"></div>
+          <h1 className="w-auto md:text-2xl xl:text-4xl font-montserrat font-bold">
             NUEVA COLLECIÓN
           </h1>
-          <div className="w-96 border h-px border-gray-300"></div>
+          <div className="md:w-80 xl:w-96 border h-px border-gray-300"></div>
         </div>
         <div className="w-full">
         <Link to="/products" className="flex justify-between">

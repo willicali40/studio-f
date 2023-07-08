@@ -13,7 +13,7 @@ function Error404() {
       <div className="w-full flex justify-center mt-6">
         <Link to="/">
           <input
-            className="w-80 h-12 font-extrabold text-white text-sm bg-green-600 cursor-pointer"
+            className="md:w-72 xl:w-80 md:h-8 xl:h-12 font-extrabold text-white text-sm bg-green-600 cursor-pointer"
             type="button"
             value="VOLVER"
           />
