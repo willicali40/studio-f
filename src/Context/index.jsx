@@ -23,6 +23,9 @@ export const ShoppingProvider = ({ children }) => {
   // this code is to change the header when clicking on link for products
   const [category, setCategory] = useState(null);
 
+  // Product card - if product is added then icon change to checked
+  const [added, setAdded] = useState(false)
+
   // fetch from api
   useEffect(() => {
     fetch("https://api.escuelajs.co/api/v1/products")
@@ -78,6 +81,8 @@ export const ShoppingProvider = ({ children }) => {
         productsToCart,
         setProductsToCart,
         totalPrice,
+        added,
+        setAdded
       }}
     >
       {children}

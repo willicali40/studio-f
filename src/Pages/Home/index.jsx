@@ -45,31 +45,31 @@ function Home() {
       img: "products/_stfco_producto_Bolsosycarteras_BLANCO_S402293_1.jpg",
       state: "NUEVO",
       title: "BOLSO DE HOMBRO CON CADENA Y FF FRONTAL",
-      price: "$298.900",
+      price: "298.900",
     },
     {
       img: "products/_stfco_producto_Camisasyblusas_NATURAL_S173243_1.jpg",
       state: "NUEVO",
       title: "BLUSA MANGA 3/4 CON PASAMANERIA",
-      price: "$289.900",
+      price: "289.900",
     },
     {
       img: "products/_stfco_producto_Camisasyblusas_NATURAL_S173561_2.jpg",
       state: "NUEVO",
       title: "BLUSA CUELLO ALTO Y MANGA LARGA CON CRUCE",
-      price: "$189.900",
+      price: "189.900",
     },
     {
       img: "products/_stfco_producto_Camisasyblusas_ROJOPRADA_S173896A_1.jpg",
       state: "NUEVO",
       title: "BLUSA SISA CUELLO ALTO CON BROCHES",
-      price: "$159.900",
+      price: "159.900",
     },
     {
       img: "products/_stfco_producto_Enterizosconjuntos_VERDESELVA_S052390_1.jpg",
       state: "NUEVO",
       title: "CONJUNTO SHORT Y BLUSA CAMISERA",
-      price: "$329.900",
+      price: "329.900",
     },
   ];
 
@@ -121,6 +121,7 @@ function Home() {
                 title={product.title}
                 price={product.price}
                 active={false}
+                id={product.id}
               />
             );
           })}

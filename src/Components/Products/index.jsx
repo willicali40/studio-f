@@ -20,6 +20,7 @@ function Products() {
             price={product.price}
             product={product}
             active={true}
+            id={product.id}
           />
         );
       });

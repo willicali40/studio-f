@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { ShoppingContext } from "../../Context/index";
-import { AiOutlinePlusCircle } from "react-icons/ai";
+import { AiOutlinePlusCircle, AiOutlineCheckCircle } from "react-icons/ai";
 
-function ProductCard({ image, state, title, price, product, active }) {
+function ProductCard({ image, state, title, price, product, active, id }) {
   const context = useContext(ShoppingContext);
 
   function addToCart(product) {
@@ -10,18 +10,35 @@ function ProductCard({ image, state, title, price, product, active }) {
     context.setProductsToCart([...context.productsToCart, product]);
   }
 
-  return (
-    <div className="w-72 m-4">
-      <div className="relative">
-        <img src={image} alt="title" />
-        {active && (
+  function renderIcon(active, id) {
+    let isInCart =
+      context.productsToCart.filter((product) => product.id === id).length > 0;
+
+    if (active) {
+      if (isInCart) {
+        return (
+          <AiOutlineCheckCircle
+            className="w-8 h-8 bg-white rounded-full absolute top-3 right-3"
+          />
+        );
+      } else {
+        return (
           <AiOutlinePlusCircle
             className="w-8 h-8 bg-white rounded-full absolute top-3 right-3 cursor-pointer"
             onClick={() => {
               addToCart(product);
             }}
           />
-        )}
+        );
+      }
+    }
+  }
+
+  return (
+    <div className="w-72 m-4">
+      <div className="relative">
+        <img src={image} alt="title" />
+        {renderIcon(active, id)}
         <span className="absolute bottom-2 left-2 p-1 bg-black text-white text-xs">
           {state}
         </span>
