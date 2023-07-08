@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import error404 from '../../../public/404/STF-ERROR404-BANNER-LG.jpg'
 
 function Error404() {
   return (
@@ -6,7 +7,7 @@ function Error404() {
       <figure className="w-full mt-28">
         <img
           className="w-full"
-          src="public\404\STF-ERROR404-BANNER-LG.jpg"
+          src={error404}
           alt="Página no encontrada"
         />
       </figure>

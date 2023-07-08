@@ -5,6 +5,8 @@ import {
   AiOutlineTwitter,
   AiFillYoutube,
 } from "react-icons/ai";
+import mediosPago from '../../../public/payment/mediosPago-3.jpg'
+import sicColombia from '../../../public/payment/logo-sic-colombia.jpg'
 
 function Footer() {
   const discoverStudiofLinks = [
@@ -212,10 +214,10 @@ function Footer() {
         <div className="w-full flex items-center justify-center mt-6 mb-6">
           <img
             className="w-80 h-12"
-            src="public/payment/mediosPago-3.jpg"
+            src={mediosPago}
             alt="Payment methods"
           />
-          <img src="public/payment/logo-sic-colombia.jpg" />
+          <img src={sicColombia} />
         </div>
         <p className="w-full text-xs text-center pb-3 border-b border-zinc-300">
           STF GROUP se encuentra comprometido con la transparencia y la
